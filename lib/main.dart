@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text('Shenzrugs'),
       ),
       body: Center(
@@ -53,7 +54,17 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 250,
               width: 250,
               child: Image.asset("assets/zenitsu.jpg"),
-            )
+            ),
+            Container(
+              height: 250,
+              width: 250,
+              child: Image.asset("assets/Ak.jpg"),
+            ),
+            Container(
+              height: 250,
+              width: 250,
+              child: Image.asset("assets/DSEar.jpg"),
+            ),
           ],
         ),
       ),
