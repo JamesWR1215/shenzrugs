@@ -50,20 +50,21 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              height: 250,
-              width: 250,
-              child: Image.asset("assets/zenitsu.jpg"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 250,
+                width: 250,
+                child: Image.asset("assets/Ak.jpg"),
+              ),
             ),
-            Container(
-              height: 250,
-              width: 250,
-              child: Image.asset("assets/Ak.jpg"),
-            ),
-            Container(
-              height: 250,
-              width: 250,
-              child: Image.asset("assets/DSEar.jpg"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 250,
+                width: 250,
+                child: Image.asset("assets/DSEar.jpg"),
+              ),
             ),
           ],
         ),
