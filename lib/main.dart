@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_insta/flutter_insta.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,24 +47,65 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.only(top: 25.0, bottom: 5.0),
               child: Container(
-                height: 250,
-                width: 250,
-                child: Image.asset("assets/Ak.jpg"),
+                color: Colors.blue,
+                height: 50,
+                child: Text('Buy Rugs Now!'),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 250,
-                width: 250,
-                child: Image.asset("assets/DSEar.jpg"),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 250,
+                        width: 250,
+                        child: Image.asset("assets/Ak.jpg"),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 250,
+                        width: 250,
+                        child: Image.asset("assets/DSEar.jpg"),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 250,
+                        width: 250,
+                        child: Image.asset("assets/RS.jpg"),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 250,
+                        width: 250,
+                        child: Image.asset("assets/DSEar.jpg"),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
+            ElevatedButton(onPressed: onPressed() {
+              print("Ordered");
+            }, child: Text("Order now!")),
           ],
         ),
       ),
